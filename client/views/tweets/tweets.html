@@ -1,0 +1,34 @@
+<template name="tweets">
+    <div class="ui feed segment">
+        <h1 class="ui left floated header">TWIMPLE</h1>
+        <div class="buttons_menu">
+            <div class="small ui blue button filterButton">Filter</div>
+            <div class="small ui green button everythingReadButton">Everything read!</div>
+        </div>
+        {{#if areThereNewTweets}}
+            {{#each tweets}}
+                <div class="event">
+                    <div class="label">
+                        {{#if retweeted}}
+                            <i class="circular retweet icon"></i>
+                        {{else}}
+                            <img src="{{profileImageUrl}}" title="{{name}} - @{{screenName}}">
+                        {{/if}}
+                    </div>
+                    <div class="content">
+                        <div class="date">{{formatTime createdAt}}</div>
+                        <div class="summary">{{{linkify text}}}</div>
+                    </div>
+                </div>
+            {{/each}}
+        {{else}}
+            <div class="event">
+                <div class="label"></div>
+                <div class="content">
+                    <div class="date"></div>
+                    <div class="summary">There aren't any new tweets.</div>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</template>

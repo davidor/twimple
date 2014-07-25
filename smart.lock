@@ -1,0 +1,27 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "twit": {},
+      "semantic-ui": {},
+      "momentjs": {}
+    },
+    "packages": {
+      "twit": {
+        "git": "https://github.com/subhog/meteor-twit.git",
+        "tag": "v0.2.0",
+        "commit": "3eb473f9efef8c77ae6a8eb6715fbdf93c4d87c0"
+      },
+      "semantic-ui": {
+        "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
+        "tag": "v0.19.0",
+        "commit": "23ddf7b58db125cc33d0d95d58fcac940f262481"
+      },
+      "momentjs": {
+        "git": "https://github.com/crapthings/meteor-momentjs.git",
+        "tag": "v2.1.0.2",
+        "commit": "59a762e297082eea8b8cae00374c2b7ac6f89529"
+      }
+    }
+  }
+}

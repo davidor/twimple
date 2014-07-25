@@ -1,0 +1,13 @@
+<template name="friends">
+    <div class="ui floating right sidebar">
+        <div class="ui mini images">
+            {{#each friends}}
+                {{#if filtered}}
+                    <img class="ui disabled image disabledImage" src="{{profileImageUrl}}" title="@{{screenName}}">
+                {{else}}
+                    <img class="ui image enabledImage" src="{{profileImageUrl}}" title="@{{screenName}}">
+                {{/if}}  
+            {{/each}}
+        </div>
+    </div>
+</template>

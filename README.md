@@ -1,7 +1,7 @@
 Twimple
 =======
 
-Twimple is a simple twitter client that I developed to try to make the time that I spend on Twitter more productive. Twimple has been developed using [Meteor](https://www.meteor.com/) and is based on this [tutorial](http://g00glen00b.be/meteor-twitter-streaming).
+Twimple is a simple twitter client that I developed to try to make the time that I spend on Twitter more productive. Twimple has been developed using [Meteor](https://www.meteor.com/), [Twit](https://github.com/ttezel/twit), and is based on this [tutorial](http://g00glen00b.be/meteor-twitter-streaming).
 
 This is what Twimple does:
 

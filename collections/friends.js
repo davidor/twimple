@@ -36,7 +36,7 @@ updateFriends = function(Twit, userName) {
 isFilteredUser = function(screenName) {
     return (Friends.findOne({"screenName": screenName}) != null)
             && (Friends.findOne({"screenName": screenName}).filtered);
-}
+};
 
 function insertFriendInDb(friend) {
     Friends.insert({
